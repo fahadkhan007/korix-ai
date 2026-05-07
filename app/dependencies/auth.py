@@ -12,7 +12,7 @@ try:
     PUBLIC_KEY = _pem_path.read_text()
 except FileNotFoundError:
     PUBLIC_KEY=None
-    print(f"PUBLIC_KEY file noy found at {_pem_path}")
+    print(f"PUBLIC_KEY file not found at {_pem_path}")
 
 _security = HTTPBearer()
 
